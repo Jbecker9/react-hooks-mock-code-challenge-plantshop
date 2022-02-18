@@ -41,6 +41,12 @@
       "name": "Fiddle Leaf Fig",
       "image": "./images/fiddle-leaf-fig.jpg",
       "price": 55
+    },
+    {
+      "name": "Fern",
+      "image": "https://www.fs.fed.us/wildflowers/beauty/ferns/images/structure/phegopteris_connectilis_e_lg.jpg",
+      "price": 14.28,
+      "id": 8
     }
   ]
 }

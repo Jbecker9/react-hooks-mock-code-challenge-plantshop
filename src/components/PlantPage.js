@@ -12,9 +12,13 @@ function PlantPage() {
       .then(plantData => setPlants(plantData))
   }, [])
 
+  function addNewPlantList(props){
+    setPlants(props)
+  }
+
   return (
     <main>
-      <NewPlantForm />
+      <NewPlantForm plants={plants} addNewPlant={(prop)=>addNewPlantList(prop)}/>
       <Search />
       <PlantList plants={plants}/>
     </main>
