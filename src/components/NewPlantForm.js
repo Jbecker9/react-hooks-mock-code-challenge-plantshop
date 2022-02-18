@@ -1,11 +1,19 @@
-import React from "react";
+import React, {useState} from "react";
 
 function NewPlantForm() {
+  const [newPlant, setNewPlant] = useState({})
+
+  function renderNewPlant(){
+    const newPlantObj = {
+      
+    }
+  }
+
   return (
     <div className="new-plant-form">
       <h2>New Plant</h2>
       <form>
-        <input type="text" name="name" placeholder="Plant name" />
+        <input onChange={(e)=>console.log(e.target.value)} type="text" name="name" placeholder="Plant name" />
         <input type="text" name="image" placeholder="Image URL" />
         <input type="number" name="price" step="0.01" placeholder="Price" />
         <button type="submit">Add Plant</button>
