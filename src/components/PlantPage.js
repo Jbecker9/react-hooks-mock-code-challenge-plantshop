@@ -16,10 +16,14 @@ function PlantPage() {
     setPlants(props)
   }
 
+  function plantSearch(prop){
+    setPlants(prop)
+  }
+
   return (
     <main>
       <NewPlantForm plants={plants} addNewPlant={(prop)=>addNewPlantList(prop)}/>
-      <Search />
+      <Search plants={plants} plantSearch={(prop)=>plantSearch(prop)}/>
       <PlantList plants={plants}/>
     </main>
   );
